@@ -48,7 +48,7 @@ Compared to the standalone Isolation Forest, the hybrid reduces the false positi
 exceeds the Isolation Forest's 0.9137, confirming that the AE contribution provides genuine 
 additive discriminating value.
 
-![Confusion Matrices for All Models](images/confusion-matrices-all-models.png)
+![Confusion Matrices for All Models](confusion-matrices-all-models.png)
 *Figure 7.1: Confusion matrices comparing Random Forest, SVM, Autoencoder, Isolation 
 Forest, and Hybrid models (t=0.133 and t=0.196)*
 
@@ -65,7 +65,7 @@ Forest, and Hybrid models (t=0.133 and t=0.196)*
 
 *\* Selected as primary operating point (balanced threshold)*
 
-![Performance Metrics Comparison](images/performance-comparison.png)
+![Performance Metrics Comparison](performance-comparison.png)
 *Figure 7.2: Performance metrics comparison across all model configurations*
 
 The supervised Random Forest dominates in Precision, F1-Score, and AUC-ROC due to its 
@@ -82,7 +82,7 @@ across all evaluation metrics. The comparison addresses the core research questi
 much performance is sacrificed by operating without labelled attack data at training 
 time?**
 
-![Precision vs Recall Trade-off](images/precision-recall-tradeoff.png)
+![Precision vs Recall Trade-off](precision-recall-tradeoff.png)
 *Figure 7.3: Precision vs Recall trade-off across all models. Unsupervised models exhibit 
 a characteristic inverse precision-recall trade-off, while the supervised Random Forest 
 achieves simultaneously high values.*
@@ -106,7 +106,7 @@ outperforms a supervised kernel method when scalability is considered.
 Table 7.2 and Figure 7.4 present the per-attack-type detection rates for all three primary 
 models on the full 34,897-event attack test set.
 
-![Detection Rate per Attack Type](images/detection-rate-per-attack.png)
+![Detection Rate per Attack Type](detection-rate-per-attack.png)
 *Figure 7.4: Detection rate per attack type — Random Forest, SVM, and Hybrid AE+IF*
 
 **Table 7.2: Detection Rate per Attack Type — All Models**
